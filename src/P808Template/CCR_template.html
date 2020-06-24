@@ -873,42 +873,43 @@ function generate_rating_section(){
 	<div class="panel panel-primary">
 		<div class="panel-heading">
 			<h3 class="panel-title">
-				<a data-target="#instruction" data-toggle="collapse" >Instructions for speech quality assessment</a>
+				<a data-target="#instruction" data-toggle="collapse" >Anleitung für die Bewertung der Sprachqualität</a>
 			</h3>
 		</div>
 		<div  class="panel-collapse collapse in" id="instruction">
 			  <div class="panel-body" >
-			  <b>Introduction</b>
+			  <b>Einführung</b>
 
 				<!--<img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/process_2.png" alt="scale" class="center" width="300px">-->
 				<img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/process_3.png" alt="scale" class="center" style='width: 60%' >
 
-				  <p>Welcome! You are about to participate in our speech quality assessment experiment! This HIT has two + two (just every now and then) sections:</p>
+				<p>Herzlich Willkommen! Sie werden an einem Experiment zur Ermittlung der Sprachqualität teilnehmen! Dieser HIT hat insgesamt zwei + zwei (hin und wieder) Sektionen:</p>
 				<ul>
-					<li><b>Qualification (just once):</b> Check if you are eligible to perform this HITs</li>
-					<li><b>Setup (every <b class="setup_time"> 0</b> minutes):</b> Configure your system and validate it by answering to 6 questions</li>
-					<li><b>Training (every <b class="training_time"> 0 hour</b>):</b> <b class="question_number_training"> 0 </b> questions, same as "Ratings" but appears time to time</li>
-					<li><b>Rating:</b> Listen to <b class="question_number"> 0 </b> pairs of audio clips and give <b>your opinion about the quality of the speech</b> you hear.</li>
+					<li><b>Qualifikation (nur einmal):</b> Prüfen Sie ob Sie berechtigt sind an diesem HIT teilzunehmen</li>
+					<li><b>Setup (alle <b class="setup_time"> 0</b> Minuten):</b> Konfigurieren Sie Ihr System und validieren Sie es mit 6 Fragen</li>
+					<li><b>Training (alle <b class="training_time"> 0 </b> Stunden):</b> <b class="question_number_training"> 0 </b> Fragen, genau so wie das Rating, aber nur einmal am Tag</li>
+					<li><b>Rating:</b> Hören Sie sich <b class="question_number"> 0 </b> Audio-Dateien an und <b>beurteilen Sie die Sprachqualität</b></li>
 				</ul>
-				<p>You should follow the below mentioned rules, otherwise your answers will be invalid.</p>
-				<p><b>Rules:</b></p>
+				<p>Beachten Sie, dass nicht alle Teile der Audio-Dateien auf Deutsch sind.</p>
+				<p>Folgen Sie den unten genannten Regeln, andererseits sind Ihre Antworten ungültig.</p>
+				<p><b>Regeln:</b></p>
 				<ul>
-					<li>Use a headset, not the loudspeaker: otherwise your response will be rejected</li>
-					<li>Perform the task in a quite environment</li>
-					<li>Do not change the volume after modifying it in the Setup section.</li>
-				</ul>
-
-				<p><b>Payment:</b></p>
-				<p>The result of this experiment is <b>very important for us and other scientist</b> working in this area. We have methods that analyse the consistency of your answers. We will use these methods to rank the submitted assignments according to quality.</p>
-				<p>For this experiment, we will pay a base reward of <b>${{cfg.hit_base_payment}}/HIT</b> for every accepted HIT. We have made available a set of <b class="max_allowed_hits">0 </b> different HITs. You will receive a bonus of:</p>
-
-				<ul>
-				  <li>${{cfg.quantity_bonus}}/HIT (for a total of <b>${{cfg.sum_quantity}}/HIT</b>) if you submit <b>more than {{cfg.quantity_hits_more_than}} HITs</b> or</li>
-				  <li>${{cfg.quality_bonus}}/HIT (for a total of <b>${{cfg.sum_quality }}/HIT</b>) if you submit <b>more than {{cfg.quantity_hits_more_than}} HITs</b> <u>and</u> be in the <b>top {{cfg.quality_top_percentage}}% quality group</b>.</li>
+					<li>Sie müssen <b>Kopfhörer</b>, und nicht einen Lautsprecher verwenden: Andererseits werden Ihre Antworten abgelehnt</li>
+					<li>Sie müssen die Aufgaben in einer<b>ruhigen Umgebung</b> absolvieren</li>
+					<li>Ändern Sie nicht das Volumen, nachdem Sie dieses im Setup festgelegt haben.</li>
 				</ul>
 
-				<p>Bonuses will be assigned with in 7 days.</p>
-				  <b>Please perform up to <b class="max_allowed_hits"> 0 </b> HITs from this group. If you do more than that, the <u>rest will be rejected.</u></b>
+				<p><b>Bezahlung:</b></p>
+				<p>Die Resultate dieses Experiments<b> sind sehr wichtig für uns und andere Wissenschaftler</b>, welche in diesem Bereich arbeiten. Wir verwenden Methoden, um die Konsistenz der abgegebenen Antworten zu analysieren. Wir verwenden diese Methoden, um die abgegebenen Assignments auf ihre Qualität zu überprüfen.</p>
+				<p>Für dieses Experiment gibt es eine Basis-Bezahlung von <b>${{cfg.hit_base_payment}}/HIT</b> für jeden akzeptierten HIT. Insgesamt sind <b class="max_allowed_hits">0 </b> verschiedene HITs verfügbar. Sie werden einen Bonus :</p>
+
+				<ul>
+				  <li>${{cfg.quantity_bonus}}/HIT (in Höhe von insgesamt <b>${{cfg.sum_quantity}}/HIT</b>) , wenn Sie  <b> mehr als  {{cfg.quantity_hits_more_than}} HITs erfolgreich bearbeiten</b> oder</li>
+				  <li>${{cfg.quality_bonus}}/HIT (in Höhe von insgesamt <b>${{cfg.sum_quality }}/HIT</b>) ,  wenn Sie  <b> mehr als  {{cfg.quantity_hits_more_than}} HITs</b> <u>und</u> in den <b> Top {{cfg.quality_top_percentage}}% der Vergleichsgruppe sind</b>.</li>
+				</ul>
+
+				<p>Bonuses werden innerhalb von 7 Tagen ausgezahlt.</p>
+				  <b>Sie können bis zu <b class="max_allowed_hits"> 0 </b> HITs aus dieser Gruppe bearbeiten. Wenn Sie mehr HITs bearbeiten, wird der <u>Rest abgelehnt.</u></b>
 			</div>
 		</div>
 
@@ -923,37 +924,37 @@ function generate_rating_section(){
 <div class="panel panel-info">
   <div class="panel-heading">
     <h3 class="panel-title">
-		<a data-toggle="collapse" href="#collapse1">Qualification - Just once</a>
+		<a data-toggle="collapse" href="#collapse1">Qualifikation - Nur einmal</a>
 	</h3>
   </div>
   <div id="collapse1" class="panel-collapse collapse in">
 	  <div class="panel-body">
 
-		<fieldset class="qualificationFieldset"><label>1.&nbsp;What is your gender?</label>
-				<div class="radio">
-				  <label><input type="radio" name="1_gender" value="M" required="">Male</label>
-				</div>
-				<div class="radio">
-				  <label><input type="radio" name="1_gender" value="F">Female</label>
-				</div>
-				<div class="radio disabled">
-				  <label><input type="radio" name="1_gender" value="O">Other</label>
-				</div>
-		</fieldset>
-		<fieldset class="qualificationFieldset"><label>2.&nbsp;In what year were you born? </label>
-				<div class="form-group">
-				  <input type="text" class="form-control" name="2_birth_year" required="">
-				</div>
-		</fieldset>
+		<fieldset class="qualificationFieldset"><label>1.&nbsp;Was ist ihr Geschlecht?</label>
+			<div class="radio">
+			  <label><input type="radio" name="1_gender" value="M" required="">Männlich</label>
+			</div>
+			<div class="radio">
+			  <label><input type="radio" name="1_gender" value="W">Weiblich</label>
+			</div>
+			<div class="radio disabled">
+			  <label><input type="radio" name="1_gender" value="O">Etwas anderes</label>
+			</div>
+	</fieldset>
+	<fieldset class="qualificationFieldset"><label>2.&nbsp;In welchem Jahr wurden Sie geboren? </label>
+			<div class="form-group">
+			  <input type="text" class="form-control" name="2_birth_year" required="">
+			</div>
+	</fieldset>
 
-		<fieldset class="qualificationFieldset"><label>3.&nbsp;What is your mother tongue? </label>
-				<div class="form-group">
-				  <input type="text" class="form-control" name="3_mother_tongue" required="">
-				</div>
-		</fieldset>
+	<fieldset class="qualificationFieldset"><label>3.&nbsp;Was ist Ihre Muttersprache </label>
+			<div class="form-group">
+			  <input type="text" class="form-control" name="3_mother_tongue" required="">
+			</div>
+	</fieldset>
 
 
-		<fieldset class="qualificationFieldset"><label>4.&nbsp; What type of listening devices do you have and able to use now (select all)?</label>
+		<fieldset class="qualificationFieldset"><label>4.&nbsp; Welche Arten von Audio-Geräten stehen Ihnen für dieses Experiment zur Verfügung (wählen Sie alle Zutreffenden aus)?</label>
 
 			<div class="table-responsive 4_lds">
 			  <table class="table" border="0" cellpadding="0" cellspacing="0" >
@@ -965,10 +966,10 @@ function generate_rating_section(){
 						<td style="width:25%"> <img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/inbuild.png" alt="inbuild speakers" width="100px"> </td>
 					</tr>
 					<tr>
-						<td><div class="checkbox"><label><input type="checkbox" value="in-ear" name="4_ld" required>In-ear headphones</label></div></td>
-						<td><div class="checkbox"><label><input type="checkbox" value="over-ear" name="4_ld" required>Over-the-ear headphones</label></div></td>
-						<td><div class="checkbox"><label><input type="checkbox" value="ex-ls" name="4_ld" required>External loudspeaker</label></div></td>
-						<td><div class="checkbox"><label><input type="checkbox" value="ib-ls" name="4_ld" required>In-build loudspeaker</label></div></td>
+						<td><div class="checkbox"><label><input type="checkbox" value="in-ear" name="4_ld" required>In-ear Kopfhörer</label></div></td>
+						<td><div class="checkbox"><label><input type="checkbox" value="over-ear" name="4_ld" required>Over-the-ear Kopfhörer</label></div></td>
+						<td><div class="checkbox"><label><input type="checkbox" value="ex-ls" name="4_ld" required>Externe Lautsprecher</label></div></td>
+						<td><div class="checkbox"><label><input type="checkbox" value="ib-ls" name="4_ld" required>Eingebaute Lautsprecher</label></div></td>
 					</tr>
 
 				</tbody>
@@ -978,71 +979,71 @@ function generate_rating_section(){
 		</fieldset>
 
 		<fieldset class="qualificationFieldset">
-				 <div class="form-group">
-				  <label for="sel1">5.&nbsp;When was the last time you participated in <span title="Giving your opinion about a product or media, for example what is the over all quality of this video. "><u>a subjective test</u></span>?</label>
-				  <select class="form-control" id="sel1" name="5_last_subjective" required="">
-					<option value="">Please select</option>
-					<option value="0d">Today</option>
-					<option value="3d">In last 3 days</option>
-					<option value="7d">In last week</option>
-					<option value="30d">In last month</option>
-					<option value="nn">Never participated</option>
-				  </select>
-				</div>
-		</fieldset>
+			<div class="form-group">
+			 <label for="sel1">5.&nbsp;Wann war das letzte Mal <span title="Ein Produkt oder Medium beurteilen, z.B. Was ist die Gesamtqualität eines Videos "><u>, dass Sie an einem subjektiven Test teilgenommen haben</u></span>?</label>
+			 <select class="form-control" id="sel1" name="5_last_subjective" required="">
+			   <option value="">Bitte wählen Sie aus</option>
+			   <option value="0d">Heute</option>
+			   <option value="3d">In den letzten 3 Tagen</option>
+			   <option value="7d">In der letzten Woche</option>
+			   <option value="30d">Im letzen Monat</option>
+			   <option value="nn">Noch nie</option>
+			 </select>
+		   </div>
+   </fieldset>
 
-		<fieldset class="qualificationFieldset">
-				 <div class="form-group">
-				  <label for="sel2">6.	When was the last time you participated in an <span title="Giving your opinion about an audio sample"><u>audio listening test</u></span>?</label>
-				  <select class="form-control" id="sel2" name="6_audio_test" required="">
-					<option value="">Please select</option>
-					<option value="0d">Today</option>
-					<option value="3d">In last 3 days</option>
-					<option value="7d">In last week</option>
-					<option value="30d">In last month</option>
-					<option value="nn">Never participated</option>
-				  </select>
-				</div>
-		</fieldset>
+   <fieldset class="qualificationFieldset">
+			<div class="form-group">
+			 <label for="sel2">6.	Wann war das letzte Mal <span title="Ein Audio auf seine Qualität beurteilen"><u>, dass Sie an einem Audio-Zuhör Test teilgenommen haben</u></span>?</label>
+			 <select class="form-control" id="sel2" name="6_audio_test" required="">
+			   <option value="">Bitte wählen Sie aus</option>
+			   <option value="0d">Heute</option>
+			   <option value="3d">In den letzten 3 Tagen</option>
+			   <option value="7d">In der letzten Woche</option>
+			   <option value="30d">Im letzen Monat</option>
+			   <option value="nn">Noch nie</option>
+			 </select>
+		   </div>
+   </fieldset>
 
-		<fieldset class="qualificationFieldset"><label>7.&nbsp;Have you ever been directly involved in work connected with assessment of the performance of telephone systems, or related work such as speech coding?</label>
-				<div class="radio">
-				  <label><input type="radio" name="7_working_area" value="Y" required="">Yes</label>
-				</div>
-				<div class="radio">
-				  <label><input type="radio" name="7_working_area" value="N">No</label>
-				</div>
-		</fieldset>
+   <fieldset class="qualificationFieldset"><label>7.&nbsp;Waren Sie schon einmal direkt eingebunden in die Arbeit der Beurteilung der Performance von Telekommikations-Sytemen, oder verwandter Arbeit wie Speech-Coding?</label>
+		   <div class="radio">
+			 <label><input type="radio" name="7_working_area" value="Y" required="">Ja</label>
+		   </div>
+		   <div class="radio">
+			 <label><input type="radio" name="7_working_area" value="N">Nein</label>
+		   </div>
+   </fieldset>
 
-		<fieldset class="qualificationFieldset"><label>8.&nbsp; I belive, ...</label>
-				<div class="radio">
-				  <label><input type="radio" name="8_hearing" value="normal" required="">I have a normal hearing ability.</label>
-				</div>
-				<div class="radio">
-				  <label><input type="radio" name="8_hearing" value="mid">I have difficulties keeping up with conversations, especially in noisy surroundings (mid hearing loss).</label>
-				</div>
-				<div class="radio">
-				  <label><input type="radio" name="8_hearing" value="moderate">I have difficulty keeping up with conversations when I am not using a hearing aid (moderate hearing loss).</label>
-				</div>
-				<div class="radio">
-				  <label><input type="radio" name="8_hearing" value="severe">I rely on lip-reading even when I am using hearing aids (severe or profound hearing loss). </label>
-				</div>
-		</fieldset>
+   <fieldset class="qualificationFieldset"><label>8.&nbsp; Ich glaube, dass ...</label>
+		   <div class="radio">
+			 <label><input type="radio" name="8_hearing" value="normal" required="">ich eine normale Hörfähigkeit habe.</label>
+		   </div>
+		   <div class="radio">
+			 <label><input type="radio" name="8_hearing" value="mid">ich Schwierigkeiten habe einem Gespräch zu folgen, besonders in lauten Umgebungen (mittlerer Hör-Verlust).</label>
+		   </div>
+		   <div class="radio">
+			 <label><input type="radio" name="8_hearing" value="moderate">ich Schwierigkeiten habe einem Gespräch zu folgen, wenn ich meine Hörhilfen nicht verwende (moderater Hör-Verlust).</label>
+		   </div>
+		   <div class="radio">
+			 <label><input type="radio" name="8_hearing" value="severe">ich mich auf das Lippenlesen verlasse, auch wenn ich Hörgerate verwende (ernsthafter Hör-Verlust). </label>
+		   </div>
+   </fieldset>
 
 
-		<div style="text-align: center;margin:30px;"> <img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/attention.png" alt="attention"> </img> <b>Please wear your headphones now.</b></div>
+		<div style="text-align: center;margin:30px;"> <img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/attention.png" alt="attention"> </img> <b>Bitte setzen sie jetzt Ihre Kopfhörer auf..</b></div>
 
-	   <fieldset class="qualificationFieldset"><label>9.&nbsp;Please adjust the level of your computer to a comfortable level so that you hear the following audio sample very well.</label>
+	   <fieldset class="qualificationFieldset"><label>9.&nbsp;Bitte stellen sie die Lautstärke auf ihrem Computer auf ein komfortables Level.</label>
 
 			<p align="center"> <span class="baudio" id="volume" data-src="https://audiosamplesp808.blob.core.windows.net/p808-assets/clips/signal_level.wav" >&nbsp;</span> </p>
 
 			<div class="alert alert-warning" role="alert">
-			  <b>NOTE:</b> After that, you are not allowed to change the volume anymore. Otherwise your response will be rejected.
+			  <b>Achtung:</b> Achtung: Danach dürfen Sie das Volumen nicht mehr ändern. Andererseits werden ihre Antworten abgelehnt.
 			</div>
 
 		</fieldset>
 
-		<fieldset class="qualificationFieldset"><label>10.&nbsp;In each of the following tests, you hear combination of three digits (for example 1 5 3), spoken with noise in the background. Simply enter the three numbers that you have understood on the answer box below each audio file. </label>
+		<fieldset class="qualificationFieldset"><label>10.&nbsp;In jedem der folgenden Tests hören Sie eine Kombination von 3 Ziffern (z.B. 1 5 3), welche mit Hintergrund-Geräuschen aufgenommen wurden. Bitte geben Sie die drei Nummern, welche Sie verstanden haben, in die untere Box ein. </label>
 
 
 			<div class="row" style="margin: 30px;">
@@ -1099,23 +1100,23 @@ function generate_rating_section(){
   <div  class="panel-collapse collapse in" id="setup_panel">
 	  <div class="panel-body">
 
-		  <div style="text-align: center;margin:30px;"> <img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/attention.png" alt="attention">  <b>Please wear your headphones now. You must <u>wear both earbuds</u>. </b></div>
+		  <div style="text-align: center;margin:30px;"> <img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/attention.png" alt="attention">  <b>Setzen Sie ihre Kopfhörer jetzt auf. Sie <u>müssen Kopfhörer tragen</u>. </b></div>
 
-		<fieldset class="setupFieldset" ><label>1.&nbsp;Please adjust the level of your computer to <b>a comfortable level</b> so that you hear the following audio sample very well.</label>
+		<fieldset class="setupFieldset" ><label>1.&nbsp;Bitte stellen Sie die Lautstärke<b>auf ein komfortables Niveau</b>, sodass Sie das folgende Beispiel gut verstehen können.</label>
 
 			<p align="center"> <span class="baudio" id="volume2" data-src="https://audiosamplesp808.blob.core.windows.net/p808-assets/clips/signal_level.wav" >&nbsp;</span> </p>
 
 			<div class="alert alert-danger" role="alert">
-			  <b>NOTE:</b> Missing this step can strongly affect quality of your answer.
+			  <b>Achtung:</b> Falls Sie diesen Schritt auslassen, kann das die Antwort stark negativ beinflussen.
 			</div>
 
 			<div class="alert alert-warning" role="alert">
-			  After adjusting the level, you are not allowed to change the volume anymore. Otherwise your response will be rejected.
+				Achtung: Nachdem Sie das Level eingestellt haben, düften Sie nicht mehr das Volumen ändern. Andererseits wird ihre Antwort abgelehnt.
 			</div>
 		</fieldset>
 
 
-		<fieldset  class="setupFieldset"><label>2.&nbsp; Please listen to the following audio file and type in the answer to the question: </label>
+		<fieldset  class="setupFieldset"><label>2.&nbsp; Bitte hören Sie sich folgende Audio-Datei an und geben Sie ihre Antwort auf die Frage ab: </label>
 
 				<div align="center"> <span class="baudio" id="math1" data-src="${math}" >&nbsp;</span> </div>
 
@@ -1124,10 +1125,10 @@ function generate_rating_section(){
 
 		</fieldset>
 
-		<div class="alert alert-info" role="alert">For the following <b>four questions</b>, please specify which sample has a better quality compared to the other one from your perspective.</div>
+		<div class="alert alert-info" role="alert">Für die folgenden <b>vier Fragen,</b>, geben Sie bitte an, welches Audio-Sample eine bessere Qualität als das Andere ihrer Meinung nach hat.</div>
 
 
-		<fieldset  class="setupFieldset"><label>3.&nbsp;Which sample has a better quality compared to the other one? </label>
+		<fieldset  class="setupFieldset"><label>3.&nbsp;Welches Audio-Sample hat eine bessere Qualität als das Andere? </label>
 
 		<div class="row" style="margin-top:10px;">
 				<div class="col-sm-4">
@@ -1142,16 +1143,16 @@ function generate_rating_section(){
 		<div class="row" >
 				<div class="col-sm-4"></div>
 				<div class="col-sm-5">
-					<div class="radio"><label><input type="radio" name="cmp1" required="" value="a">Quality of <b>Sample A</b> is better.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp1" required="" value="o">Difference is <b>not detectable</b>.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp1" required="" value="b">Quality of <b>Sample B</b> is better.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp1" required="" value="a">Die Qualität von <b>Audio A</b> ist besser.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp1" required="" value="o">Es ist <b>kein Unterschied hörbar</b>.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp1" required="" value="b">Die Qualität von <b>Audio B</b> ist besser.</label></div>
 				</div>
 				<div class="col-sm-3"></div>
 		</div>
 
 		</fieldset>
 
-		<fieldset  class="setupFieldset"><label>4.&nbsp;Which sample has a better quality compared to the other one? </label>
+		<fieldset  class="setupFieldset"><label>4.&nbsp;Welches Audio-Sample hat eine bessere Qualität als das Andere? </label>
 
 		<div class="row" style="margin-top:10px;">
 				<div class="col-sm-4">
@@ -1166,15 +1167,15 @@ function generate_rating_section(){
 		<div class="row" >
 				<div class="col-sm-4"></div>
 				<div class="col-sm-5">
-					<div class="radio"><label><input type="radio" name="cmp2" required="" value="a">Quality of <b>Sample A</b> is better.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp2" required="" value="o">Difference is <b>not detectable</b>.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp2" required="" value="b">Quality of <b>Sample B</b> is better.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp2" required="" value="a">Die Qualität von <b>Audio A</b> ist besser.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp2" required="" value="o">Es ist <b>kein Unterschied hörbar</b>.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp2" required="" value="b">Die Qualität von <b>Audio B</b> ist besser.</label></div>
 				</div>
 				<div class="col-sm-3"></div>
 		</div>
 
 		</fieldset>
-		<fieldset  class="setupFieldset"><label>5.&nbsp;Which sample has a better quality compared to the other one? </label>
+		<fieldset  class="setupFieldset"><label>5.&nbsp;Welches Audio-Sample hat eine bessere Qualität als das Andere? </label>
 
 		<div class="row" style="margin-top:10px;">
 				<div class="col-sm-4">
@@ -1189,16 +1190,16 @@ function generate_rating_section(){
 		<div class="row">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-5">
-					<div class="radio"><label><input type="radio" name="cmp3" required="" value="a">Quality of <b>Sample A</b> is better.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp3" required="" value="o">Difference is <b>not detectable</b>.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp3" required="" value="b">Quality of <b>Sample B</b> is better.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp3" required="" value="a">Die Qualität von <b>Audio A</b> ist besser.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp3" required="" value="o">Es ist <b>kein Unterschied hörbar</b>.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp3" required="" value="b">Die Qualität von <b>Audio B</b> ist besser.</label></div>
 				</div>
 				<div class="col-sm-3"></div>
 		</div>
 
 		</fieldset>
 
-		<fieldset  class="setupFieldset"><label>6.&nbsp;Which sample has a better quality compared to the other one? </label>
+		<fieldset  class="setupFieldset"><label>6.&nbsp;Welches Audio-Sample hat eine bessere Qualität als das Andere? </label>
 
 
 		<div class="row" style="margin-top:10px;">
@@ -1214,9 +1215,9 @@ function generate_rating_section(){
 		<div class="row">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-5">
-					<div class="radio"><label><input type="radio" name="cmp4" required="" value="a">Quality of <b>Sample A</b> is better.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp4" required="" value="o">Difference is <b>not detectable</b>.</label></div>
-					<div class="radio"><label><input type="radio" name="cmp4" required="" value="b">Quality of <b>Sample B</b> is better.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp4" required="" value="a">Die Qualität von <b>Audio A</b> ist besser.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp4" required="" value="o">Es ist <b>kein Unterschied hörbar</b>.</label></div>
+					<div class="radio"><label><input type="radio" name="cmp4" required="" value="b">Die Qualität von <b>Audio B</b> ist besser.</label></div>
 				</div>
 				<div class="col-sm-3"></div>
 		</div>
@@ -1230,43 +1231,18 @@ function generate_rating_section(){
 </section>
 <!-- Setup  ends-->
 
-<!-- Device Check -->
-<section class="container" id="device_check_section">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h3 class="panel-title">
-				<a data-target="#device_check" data-toggle="collapse" >Listening device check</a>
-			</h3>
-		</div>
-		<div  class="panel-collapse collapse in" id="device_check">
-			  <div class="panel-body" >
-			  <b>Introduction</b>
-				  <p>We need to check your listening device. It is an automated test using your Web-browser functionality. Please click on <b>Start</b>.
-					  After that, you might see a popup message from your browser asking for allowance to use your microphone.
-					  Please click on <b>Allow</b> (on some of smartphones there will be no message). <u>We do not process or record any audio with your microphone</u>.
-				 <div class="center">
-						<button type="button" class="btn btn-primary center" onclick="startHeadsetCheck()">Start</button>
-						<div id="status"> </div>
-			  	</div>
-			</div>
-		</div>
-
-	</div>
-</section>
-<!-- Device Check ends-->
-
 <!-- Training section, appears once a day-->
 <section class="container" id="training">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					<a data-target="#trainingS" data-toggle="collapse" >Training (every <b class="training_time"> 0 hour</b>)</a>
+					<a data-target="#trainingS" data-toggle="collapse" >Training (alle <b class="training_time"> 0 </b> Stunden)</a>
 				</h3>
 			</div>
 			<div  class="panel-collapse collapse in" id="trainingS">
 				<div class="panel-body">
-				<p> Please answer the following <b class="question_number_training"> 0 </b> questions. For each question, please carefully listen to the pair of clips and give your opinion about the quality of the <b>Clip B</b> relative to the quality of the Clip A using the following scale. <b>Note</b> that the scale will be activated when both clips played until the end. </p>
-				<p> There is no right or wrong answer as long as you listen to the audio clips and give your opinion.</p>
+				<p> Bitte beantworten Sie die folgenden <b class="question_number_training"> 0 </b> Fragen. Für jede Frage, hören Sie sich bitte das Audio-Sample an und beurteilen Sie die Sprachqualität auf der folgenden Skala. <b>Beachten Sie</b>, dass die Skala erst aktiviert wird, wenn das Audio-Sample fertig abgespielt wurde. Falls Sie eine Unterbrechungs-Stimme hören, folgen Sie bitte ihren Anweisen.</p>
+				<p> Es gibt keine richtige oder falsche Meinung, solange Sie gut zuhören und Ihre ehrliche Meinung geben</p>
 
  				<!-- will be generated -->
 				<ul class="nav nav-tabs" role="tablist" id="trainingTabs">
@@ -1276,7 +1252,7 @@ function generate_rating_section(){
 
 
 				</div>
-			<div style="margin-top:0px;font-size:90%;text-align:center">Click <b>next</b> to answer all <b class="question_number_training"> 0 </b> questions.</div>
+			<div style="margin-top:0px;font-size:90%;text-align:center">Klicken Sie <b>next</b>, um alle <b class="question_number_training"> 0 </b> Fragen zu beantworten.</div>
 			<nav aria-label="..." id="navNextPreT">
 			  <ul class="pager">
 				<li class="previous" onclick="showPreviousQuestionInTrainingSection();"><a href="#trainingTabs" class="page-link"  role="button"><span aria-hidden="true">&larr;</span>Previous</a></li>
@@ -1306,8 +1282,9 @@ function generate_rating_section(){
 				<h3 class="panel-title">Ratings</h3>
 			</div>
 			<div class="panel-body">
-				<p> Please answer the following <b class="question_number"> 0 </b> questions. For each question, please carefully listen to the pair of clips and give your opinion about the quality of the <b>Clip B</b> relative to the quality of the Clip A using the following scale. <b>Note</b> that the scale will be activated when both clips played until the end. </p>
-				<p> There is no right or wrong answer as long as you listen to the audio clips and give your opinion.</p>
+				<p> Bitte beantworten Sie die folgenden <b class="question_number"> 0 </b> Fragen. Für jede Frage, hören Sie sich bitte das Audio-Sample an und beurteilen Sie die Sprachqualität auf der folgenden Skala. <b>Beachten Sie</b>, dass die Skala erst aktiviert wird, wenn das Audio-Sample fertig abgespielt wurde. Falls Sie eine Unterbrechungs-Stimme hören, folgen Sie bitte ihren Anweisen.</p>
+				<p> Es gibt keine richtige oder falsche Meinung, solange Sie gut zuhören und Ihre ehrliche Meinung geben</p>
+
 
  				<!-- will be generated -->
 				<ul class="nav nav-tabs" role="tablist" id="nav-tab-ul"> </ul>
@@ -1327,27 +1304,26 @@ function generate_rating_section(){
 
 
 <section class="container" id="thanks">
-	<p>Thanks for your participation. Please perform more HITs from this group when they are available for you.</p>
+	<p>Danke für Ihre Teilnahme. Gerne können Sie mehr Hits aus dieser Gruppe bearbeiten, wenn diese verfügbar sind.</p>
 </section>
 
 <section class="container" id="max_allowed_HITs_reached" hidden>
-	<p><h2>Well done! </h2> You performed the maximum number of HITs that you were allowed to.</p>
+	<p><h2>Gut gemacht! </h2> Sie haben die maximal erlaubte Anzahl an HITs bearbeitet.</p>
 
 	<div class="alert alert-danger" role="alert">
 		<img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/attention.png" alt="attention">
-			  <b>NOTE:</b> Performing more HITs
-		than what is explained in the description is forbidden and leads ro rejection of all of your submissions.
+				<b>Achtung:</b> Mehr als die vorgegebene Menge an HITs zu bearbeiten ist verboten und führt zum Ablehnen aller bearbeiteten HITs.
 			</div>
 
 </section>
 
 <section class="container" id="qualification_rejected" hidden>
-	<p>There is no assignments that match to your profile now. Please try it again in two-weeks time.
-	We thank you for your participation.</p>
+	<p>Leider gibt es für Ihr Profil keine Aufgauben. Bitte probieren Sie es in zwei Wochen erneut.
+	Vielen Dank für Ihre Teilnahme.</p>
 
 	<div class="alert alert-danger" role="alert">
 		<img src="https://audiosamplesp808.blob.core.windows.net/p808-assets/img/attention.png" alt="attention">
-			  <b>NOTE:</b> Any try to perform assignments and neglecting this message is forbidden and leads ro rejection of all of your submissions.
+				<b>Achtung:</b> Jeder Versuch trotzdem HITs zu bearbeiten ist verboten und führt zum Ablehnen aller bearbeiteten HITs.
 			</div>
 </section>
 
